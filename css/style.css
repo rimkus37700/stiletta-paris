@@ -883,8 +883,40 @@ button { font-family: inherit; }
   vertical-align: baseline;
 }
 
+/* =============================================
+   CTA SIGNATURE
+   ============================================= */
+
+.cta-signature {
+  padding: 80px 40px 100px;
+  display: flex;
+  justify-content: center;
+  background: var(--ivoire);
+}
+
+.cta-signature-btn {
+  display: inline-block;
+  padding: 18px 56px;
+  border: 1px solid var(--noir);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--noir);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-signature-btn:hover {
+  background: var(--noir);
+  color: var(--ivoire);
+}
+
 @media (max-width: 768px) {
   .citation-section { padding: 80px 24px; }
+  .cta-signature { padding: 48px 24px 72px; }
+  .cta-signature-btn { padding: 16px 40px; }
 }
 
 /* =============================================
