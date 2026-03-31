@@ -1922,7 +1922,7 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   .allure-page-layout { padding: 0 24px 60px; }
   .allure-page-arch-wrap { max-width: 100%; }
-  .allure-page-arch-caption { font-size: 28px; bottom: -24px; }
+  .allure-page-arch-caption { font-size: 24px; bottom: 20px; }
   .allure-manifesto-lines { font-size: 20px; }
 }
 
@@ -1997,7 +1997,9 @@ button { font-family: inherit; }
   .header.scrolled { padding: 16px 24px; }
   .header-nav { display: none; }
   .hamburger { display: flex; }
-  .header-logo { font-size: 13px; letter-spacing: 0.26em; }
+  .header-logo { font-size: 11px; letter-spacing: 0.18em; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
+  .header-icons { gap: 2px; }
+  .icon-btn { width: 28px; height: 28px; }
 
   .hero { padding: 32px 24px 56px; }
   .hero-title { font-size: 38px; }
