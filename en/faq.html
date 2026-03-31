@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ — Stiletta Paris</title>
-  <meta name="description" content="Questions fréquentes — Stiletta Paris. Tout savoir sur le Stiletta Palm, la livraison, les retours, l'entretien et les commandes.">
+  <meta name="description" content="Frequently asked questions — Stiletta Paris. Everything about the Stiletta Palm, shipping, returns, care and orders.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <style>
     /* ---- FAQ STYLES ---- */
     .faq-layout {
@@ -17,7 +17,7 @@
       margin: 0 auto;
     }
 
-    /* Catégorie tabs */
+    /* Category tabs */
     .faq-categories {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -52,7 +52,7 @@
       font-weight: 400;
     }
 
-    /* Sections accordéon */
+    /* Accordion sections */
     .faq-section { display: none; }
     .faq-section.visible { display: block; }
 
@@ -68,7 +68,7 @@
 
     .faq-group { margin-bottom: 48px; }
 
-    /* Accordéon item */
+    /* Accordion item */
     .faq-item {
       border-bottom: 1px solid rgba(26,26,26,0.08);
     }
@@ -158,50 +158,50 @@
     <div class="preloader-line"></div>
   </div>
 
-  <!-- TRANSITION ENTRE PAGES -->
+  <!-- PAGE TRANSITION -->
   <div class="page-transition" aria-hidden="true"></div>
 
-  <!-- CURSEUR PERSONNALISÉ -->
+  <!-- CUSTOM CURSOR -->
   <div class="cursor" aria-hidden="true">
     <div class="cursor-ring"></div>
     <div class="cursor-dot"></div>
   </div>
 
-  <nav class="mobile-nav" aria-label="Navigation mobile">
-    <button class="mobile-nav-close" aria-label="Fermer">Fermer</button>
-    <a href="index.html">Maison</a>
-    <a href="obsession.html">L'Obsession</a>
-    <a href="allure.html">L'Allure</a>
-    <a href="boutique.html">La Signature</a>
-    <a href="presse.html">Presse</a>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" aria-label="Close">Close</button>
+    <a href="index.html">Home</a>
+    <a href="obsession.html">The Obsession</a>
+    <a href="allure.html">The Allure</a>
+    <a href="product.html">The Signature</a>
+    <a href="press.html">Press</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <header class="header" role="banner">
-    <nav aria-label="Navigation gauche">
+    <nav aria-label="Left navigation">
       <ul class="header-nav">
-        <li><a href="index.html">Maison</a></li>
-        <li><a href="obsession.html">L'Obsession</a></li>
-        <li><a href="allure.html">L'Allure</a></li>
-        <li><a href="boutique.html">La Signature</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="obsession.html">The Obsession</a></li>
+        <li><a href="allure.html">The Allure</a></li>
+        <li><a href="product.html">The Signature</a></li>
       </ul>
     </nav>
     <a href="index.html" class="header-logo">STILETTA PARIS</a>
     <div class="header-right">
       <div class="lang-switch">
-        <a href="#">FR</a> | <a href="/en/faq.html">EN</a>
+        <a href="../faq.html">FR</a> | <a href="#">EN</a>
       </div>
-      <nav aria-label="Navigation droite">
+      <nav aria-label="Right navigation">
         <ul class="header-nav">
-          <li><a href="presse.html">Presse</a></li>
+          <li><a href="press.html">Press</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="header-icons">
-        <button class="icon-btn" aria-label="Rechercher"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
-        <button class="icon-btn" aria-label="Mon compte"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></button>
-        <button class="icon-btn" aria-label="Mes favoris"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="wishlist-count">0</span></button>
-        <button class="cart-icon icon-btn" aria-label="Panier"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-count">0</span></button>
+        <button class="icon-btn" aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="icon-btn" aria-label="My account"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></button>
+        <button class="icon-btn" aria-label="My wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="wishlist-count">0</span></button>
+        <button class="cart-icon icon-btn" aria-label="Cart"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-count">0</span></button>
       </div>
       <button class="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -210,200 +210,200 @@
   </header>
 
   <div class="cart-overlay"></div>
-  <aside class="cart-panel" aria-label="Panier">
+  <aside class="cart-panel" aria-label="Cart">
     <div class="cart-header-panel">
-      <h2 class="cart-title-panel">Votre Sélection</h2>
-      <button class="cart-close">Fermer</button>
+      <h2 class="cart-title-panel">Your Selection</h2>
+      <button class="cart-close">Close</button>
     </div>
-    <div class="cart-body"><p class="cart-empty">Votre sélection est vide.</p></div>
+    <div class="cart-body"><p class="cart-empty">Your selection is empty.</p></div>
     <div class="cart-footer">
       <div class="cart-total">
         <span class="cart-total-label">Total</span>
         <span class="cart-total-price">0 €</span>
       </div>
-      <a href="boutique.html" class="btn-checkout">Finaliser la commande</a>
+      <a href="product.html" class="btn-checkout">Complete order</a>
     </div>
   </aside>
 
   <main class="page-inner" role="main">
     <div class="page-hero">
-      <span class="page-label fade-in">La Maison</span>
-      <h1 class="page-title fade-in fade-in-d1">Questions<br>Fréquentes</h1>
+      <span class="page-label fade-in">The House</span>
+      <h1 class="page-title fade-in fade-in-d1">Frequently<br>Asked Questions</h1>
     </div>
 
     <div class="faq-layout fade-in">
 
-      <!-- Catégories -->
+      <!-- Categories -->
       <div class="faq-categories" role="tablist">
-        <button class="faq-cat-btn active" data-target="tab-creation" role="tab" aria-selected="true">La Création</button>
-        <button class="faq-cat-btn" data-target="tab-fabrication" role="tab" aria-selected="false">Fabrication & Qualité</button>
-        <button class="faq-cat-btn" data-target="tab-commande" role="tab" aria-selected="false">Commande & Livraison</button>
-        <button class="faq-cat-btn" data-target="tab-retours" role="tab" aria-selected="false">Retours & Service</button>
-        <button class="faq-cat-btn" data-target="tab-entretien" role="tab" aria-selected="false">Entretien</button>
-        <button class="faq-cat-btn" data-target="tab-exclusivite" role="tab" aria-selected="false">Exclusivité</button>
+        <button class="faq-cat-btn active" data-target="tab-creation" role="tab" aria-selected="true">The Creation</button>
+        <button class="faq-cat-btn" data-target="tab-fabrication" role="tab" aria-selected="false">Craftsmanship &amp; Quality</button>
+        <button class="faq-cat-btn" data-target="tab-commande" role="tab" aria-selected="false">Order &amp; Shipping</button>
+        <button class="faq-cat-btn" data-target="tab-retours" role="tab" aria-selected="false">Returns &amp; Service</button>
+        <button class="faq-cat-btn" data-target="tab-entretien" role="tab" aria-selected="false">Care</button>
+        <button class="faq-cat-btn" data-target="tab-exclusivite" role="tab" aria-selected="false">Exclusivity</button>
       </div>
 
-      <!-- Tab : La Création -->
+      <!-- Tab: The Creation -->
       <div id="tab-creation" class="faq-section visible" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">La Création</p>
+          <p class="faq-section-title">The Creation</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              Qu'est-ce que le Stiletta Palm&nbsp;?
+              What is the Stiletta Palm?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Stiletta Palm est la première création de la Maison STILETTA PARIS.</p>
-              <p>Une pièce pensée comme une signature, où chaque détail exprime une intention — l'architecture du talon stiletto transcrite dans la structure d'un sac.</p>
+              <p>The Stiletta Palm is the first creation of the House STILETTA PARIS.</p>
+              <p>A piece conceived as a signature, where every detail expresses an intention — the architecture of the stiletto heel transcribed into the structure of a bag.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              Pourquoi une seule pièce&nbsp;?
+              Why a single piece?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Nous croyons qu'une pièce forte vaut plus qu'une collection dispersée.</p>
-              <p>Stiletta Palm incarne cette vision : une identité claire, assumée, intemporelle.</p>
+              <p>We believe one strong piece is worth more than a scattered collection.</p>
+              <p>The Stiletta Palm embodies this vision: a clear, assumed, timeless identity.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tab : Fabrication & Qualité -->
+      <!-- Tab: Craftsmanship & Quality -->
       <div id="tab-fabrication" class="faq-section" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">Fabrication & Qualité</p>
+          <p class="faq-section-title">Craftsmanship &amp; Quality</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              Quels matériaux sont utilisés&nbsp;?
+              What materials are used?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Chaque pièce est réalisée en cuir premium soigneusement sélectionné pour sa tenue et sa durabilité.</p>
+              <p>Each piece is crafted in premium leather carefully selected for its structure and durability.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              Où est fabriqué le sac&nbsp;?
+              Where is the bag made?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Nos créations sont développées avec des partenaires spécialisés, sélectionnés pour leur exigence et leur savoir-faire.</p>
+              <p>Our creations are developed with specialised partners, selected for their exacting standards and expertise.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              Le sac est-il durable&nbsp;?
+              Is the bag durable?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Oui. Stiletta Palm est conçu pour durer dans le temps, tant par sa structure que par la qualité de ses matériaux.</p>
+              <p>Yes. The Stiletta Palm is designed to last over time, both in its structure and in the quality of its materials.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tab : Commande & Livraison -->
+      <!-- Tab: Order & Shipping -->
       <div id="tab-commande" class="faq-section" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">Commande & Livraison</p>
+          <p class="faq-section-title">Order &amp; Shipping</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              Quand vais-je recevoir ma commande&nbsp;?
+              When will I receive my order?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Les commandes sont expédiées sous 2 à 5 jours ouvrés. Un numéro de suivi vous est communiqué dès l'expédition.</p>
+              <p>Orders are dispatched within 2 to 5 business days. A tracking number is provided as soon as your order ships.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              Livrez-vous à l'international&nbsp;?
+              Do you ship internationally?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Oui, STILETTA PARIS propose une livraison internationale. Les délais et frais varient selon la destination.</p>
+              <p>Yes, STILETTA PARIS offers international shipping. Delivery times and costs vary by destination.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tab : Retours & Service -->
+      <!-- Tab: Returns & Service -->
       <div id="tab-retours" class="faq-section" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">Retours & Service</p>
+          <p class="faq-section-title">Returns &amp; Service</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              Puis-je retourner mon produit&nbsp;?
+              Can I return my product?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Vous disposez d'un délai de 14 jours après réception pour effectuer un retour, sous réserve que le produit soit non porté et dans son état d'origine.</p>
+              <p>You have 14 days from receipt to return the product, provided it is unworn and in its original condition.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              Que faire en cas de problème&nbsp;?
+              What should I do if there is a problem?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Notre service client est à votre écoute pour vous accompagner.</p>
-              <p>Contact&nbsp;: <a href="mailto:contact@stiletta-paris.com" style="color:var(--or);">contact@stiletta-paris.com</a></p>
+              <p>Our customer service team is here to help.</p>
+              <p>Contact: <a href="mailto:contact@stiletta-paris.com" style="color:var(--or);">contact@stiletta-paris.com</a></p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tab : Entretien -->
+      <!-- Tab: Care -->
       <div id="tab-entretien" class="faq-section" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">Entretien</p>
+          <p class="faq-section-title">Care</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              Comment entretenir mon sac&nbsp;?
+              How do I care for my bag?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Nous recommandons d'éviter l'humidité et de nettoyer avec un chiffon doux.</p>
-              <p>Le sac doit être conservé dans son pochon après utilisation. Un carnet de soin est fourni avec chaque exemplaire.</p>
+              <p>We recommend avoiding moisture and cleaning with a soft cloth.</p>
+              <p>The bag should be stored in its dust bag after use. A care booklet is provided with each piece.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Tab : Exclusivité -->
+      <!-- Tab: Exclusivity -->
       <div id="tab-exclusivite" class="faq-section" role="tabpanel">
         <div class="faq-group">
-          <p class="faq-section-title">Exclusivité</p>
+          <p class="faq-section-title">Exclusivity</p>
 
           <div class="faq-item">
             <button class="faq-question">
-              La pièce est-elle en édition limitée&nbsp;?
+              Is the piece a limited edition?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>Oui. Stiletta Palm est proposée en première édition, disponible en quantité limitée à 250 exemplaires.</p>
+              <p>Yes. The Stiletta Palm is offered as a first edition, available in a limited quantity of 250 pieces.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question">
-              D'autres modèles seront-ils disponibles&nbsp;?
+              Will other models be available?
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
             <div class="faq-answer">
-              <p>De nouvelles créations verront le jour, dans le respect de l'ADN de la maison : singularité, équilibre et signature.</p>
+              <p>New creations will emerge, in keeping with the House's DNA: singularity, balance and signature.</p>
             </div>
           </div>
         </div>
@@ -416,43 +416,43 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo">STILETTA PARIS</a>
-        <p class="footer-tagline">Ce n'est pas un sac. C'est une signature.</p>
+        <p class="footer-tagline">Not a bag. A signature.</p>
         <div class="footer-newsletter">
-          <p>Recevoir les nouvelles de la Maison</p>
+          <p>Receive news from the House</p>
           <form class="newsletter-form" action="#" method="post" novalidate>
-            <input type="email" name="email" class="newsletter-input" placeholder="Votre adresse e-mail" aria-label="Newsletter" required>
-            <button type="submit" class="newsletter-btn">S'inscrire</button>
+            <input type="email" name="email" class="newsletter-input" placeholder="Your e-mail address" aria-label="Newsletter" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
         </div>
       </div>
       <div class="footer-col">
         <span class="footer-col-title">Service</span>
         <ul class="footer-links">
-          <li><a href="boutique.html">La Signature</a></li>
-          <li><a href="livraison.html">Livraison & Retours</a></li>
-          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="product.html">The Signature</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">Légales</span>
+        <span class="footer-col-title">Legal</span>
         <ul class="footer-links">
-          <li><a href="cgv.html">Conditions de vente</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="terms.html">Terms of sale</a></li>
+          <li><a href="legal.html">Legal notice</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <span class="footer-col-title">La Maison</span>
+        <span class="footer-col-title">The House</span>
         <ul class="footer-links">
-          <li><a href="obsession.html">L'Obsession</a></li>
-          <li><a href="allure.html">L'Allure</a></li>
+          <li><a href="obsession.html">The Obsession</a></li>
+          <li><a href="allure.html">The Allure</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 Stiletta Paris. Tous droits réservés.</p>
+      <p class="footer-copy">&copy; 2025 Stiletta Paris. All rights reserved.</p>
       <div class="footer-socials">
         <a href="#" rel="noopener">Instagram</a>
         <a href="#" rel="noopener">Pinterest</a>
@@ -461,62 +461,62 @@
   </footer>
 
   <!-- SEARCH OVERLAY -->
-  <div class="search-overlay" role="dialog" aria-label="Recherche">
-    <button class="search-close-btn" aria-label="Fermer">
+  <div class="search-overlay" role="dialog" aria-label="Search">
+    <button class="search-close-btn" aria-label="Close">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
     <div class="search-inner">
-      <input type="search" class="search-input" placeholder="Rechercher…" aria-label="Rechercher">
+      <input type="search" class="search-input" placeholder="Search…" aria-label="Search">
       <div class="search-results">
-        <a class="search-result-item" href="boutique.html" data-search="stiletta palm sac cuir signature">
-          <span class="search-result-label">La Signature</span>
+        <a class="search-result-item" href="product.html" data-search="stiletta palm bag leather signature">
+          <span class="search-result-label">The Signature</span>
           <span class="search-result-name">Stiletta Palm</span>
         </a>
-        <a class="search-result-item" href="allure.html" data-search="allure maison création luxe">
-          <span class="search-result-label">La Maison</span>
-          <span class="search-result-name">L'Allure</span>
+        <a class="search-result-item" href="allure.html" data-search="allure house creation luxury">
+          <span class="search-result-label">The House</span>
+          <span class="search-result-name">The Allure</span>
         </a>
-        <a class="search-result-item" href="obsession.html" data-search="obsession matière cuir couleur">
-          <span class="search-result-label">La Maison</span>
-          <span class="search-result-name">L'Obsession</span>
+        <a class="search-result-item" href="obsession.html" data-search="obsession material leather colour">
+          <span class="search-result-label">The House</span>
+          <span class="search-result-name">The Obsession</span>
         </a>
-        <a class="search-result-item" href="presse.html" data-search="presse média couverture">
-          <span class="search-result-label">Presse</span>
-          <span class="search-result-name">Relations presse</span>
+        <a class="search-result-item" href="press.html" data-search="press media coverage">
+          <span class="search-result-label">Press</span>
+          <span class="search-result-name">Press relations</span>
         </a>
       </div>
     </div>
   </div>
 
   <!-- WAITLIST -->
-  <div class="account-dropdown" role="dialog" aria-label="Accès prioritaire">
-    <p class="account-dropdown-title">Accès Prioritaire</p>
-    <p class="account-dropdown-text">Rejoignez la liste d'attente pour accéder en avant-première à l'Espace Membre.</p>
+  <div class="account-dropdown" role="dialog" aria-label="Priority Access">
+    <p class="account-dropdown-title">Priority Access</p>
+    <p class="account-dropdown-text">Join the waitlist for early access to the Member Space.</p>
     <form class="waitlist-form" id="waitlist-form" novalidate>
-      <input type="email" class="waitlist-input" placeholder="Votre adresse e-mail" aria-label="Adresse e-mail" required>
-      <button type="submit" class="waitlist-submit">Rejoindre</button>
+      <input type="email" class="waitlist-input" placeholder="Your e-mail address" aria-label="E-mail address" required>
+      <button type="submit" class="waitlist-submit">Join</button>
     </form>
-    <p class="waitlist-confirm" id="waitlist-confirm">Votre adresse a été enregistrée. Merci.</p>
+    <p class="waitlist-confirm" id="waitlist-confirm">Your address has been saved. Thank you.</p>
   </div>
 
   <!-- WISHLIST -->
   <div class="wishlist-overlay"></div>
-  <aside class="wishlist-panel" aria-label="Liste de souhaits">
+  <aside class="wishlist-panel" aria-label="Wishlist">
     <div class="wishlist-header-panel">
-      <h2 class="wishlist-title-panel">Mes Favoris</h2>
-      <button class="wishlist-close">Fermer</button>
+      <h2 class="wishlist-title-panel">My Wishlist</h2>
+      <button class="wishlist-close">Close</button>
     </div>
     <div class="wishlist-items-container"></div>
   </aside>
 
   <div class="cookie-banner" role="dialog" aria-label="Cookies">
-    <p class="cookie-text">Stiletta Paris utilise des cookies. <a href="confidentialite.html">En savoir plus</a>.</p>
+    <p class="cookie-text">Stiletta Paris uses cookies. <a href="privacy.html">Learn more</a>.</p>
     <div class="cookie-actions">
-      <button class="cookie-btn refuse">Refuser</button>
-      <button class="cookie-btn accept">Accepter</button>
+      <button class="cookie-btn refuse">Decline</button>
+      <button class="cookie-btn accept">Accept</button>
     </div>
   </div>
 
-  <script src="js/main.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 </html>
