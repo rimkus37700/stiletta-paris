@@ -1446,6 +1446,56 @@ button { font-family: inherit; }
 .swatch-noir { background: #1a1a1a; }
 .swatch-blush { background: #e8c4b8; }
 
+/* ---- Bloc achat luxe ---- */
+.product-core {
+  margin-bottom: 30px;
+}
+
+.product-core h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--noir);
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  color: var(--noir);
+}
+
+.product-rarety {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  max-width: 460px;
+}
+
+.product-rarety p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  line-height: 2;
+}
+
+.payment-info {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--taupe);
+  margin-top: 10px;
+  margin-bottom: 8px;
+  max-width: 460px;
+}
+
 .btn-add-cart {
   display: flex; align-items: center; justify-content: center;
   width: 100%; max-width: 460px;
