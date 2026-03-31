@@ -1469,6 +1469,15 @@ button { font-family: inherit; }
   color: var(--noir);
 }
 
+.product-core .final-price {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
 .product-rarety {
   margin-top: 20px;
   margin-bottom: 4px;
