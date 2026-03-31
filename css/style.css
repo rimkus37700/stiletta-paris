@@ -1997,18 +1997,13 @@ button { font-family: inherit; }
   .header.scrolled { padding: 16px 24px; }
   .header-nav { display: none; }
   .hamburger { display: flex; }
-  .header-logo {
-    position: static;
-    transform: none;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    flex: 1;
-    text-align: center;
-  }
-  .header-left { flex: 1; }
-  .header-right { flex: 1; justify-content: flex-end; }
-  .header-icons { gap: 0px; }
-  .icon-btn { width: 26px; height: 26px; }
+  .header-logo { font-size: 11px; letter-spacing: 0.18em; }
+  /* Sur mobile : cacher search, account, wishlist — garder uniquement panier */
+  .icon-btn[aria-label="Rechercher"],
+  .icon-btn[aria-label="Mon compte"],
+  .icon-btn[aria-label="Mes favoris"] { display: none; }
+  .header-icons { gap: 0; }
+  .icon-btn { width: 28px; height: 28px; }
 
   .hero { padding: 32px 24px 56px; }
   .hero-title { font-size: 38px; }
