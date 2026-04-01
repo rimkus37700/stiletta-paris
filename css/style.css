@@ -617,7 +617,14 @@ button { font-family: inherit; }
   width: 22px; height: 1px;
   background: var(--noir);
   transition: all 0.3s ease;
+  transform-origin: center;
 }
+
+/* Hamburger → X */
+.hamburger.active span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.header[data-hero="dark"]:not(.scrolled) .hamburger span { background: var(--ivoire); }
 
 /* =============================================
    NAVIGATION MOBILE
@@ -651,18 +658,7 @@ button { font-family: inherit; }
 
 .mobile-nav a:hover { color: var(--or); }
 
-.mobile-nav-close {
-  position: absolute;
-  top: 28px; right: 24px;
-  background: none; border: none;
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  cursor: pointer;
-  color: var(--taupe);
-}
+.mobile-nav-close { display: none; }
 
 /* =============================================
    HERO
@@ -2084,23 +2080,52 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   :root { --section-pad: 60px; }
 
-  .header { padding: 20px 24px; }
-  .header.scrolled { padding: 16px 24px; }
+  /* ---- HEADER MOBILE 3 colonnes ---- */
+  .header {
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header.scrolled { padding: 0 20px; }
+
+  /* Colonne gauche : nav cachée mais garde le flex-space */
+  .header > nav:first-child { flex: 1; display: block; }
   .header-nav { display: none; }
-  .hamburger { display: flex; }
+
+  /* Logo centré */
   .header-logo {
     position: static;
     transform: none;
     font-size: 11px;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
+    flex: 0;
+    white-space: nowrap;
   }
-  .header { justify-content: space-between; gap: 0; }
-  /* Cacher search et account sur mobile, garder wishlist + panier + hamburger */
+
+  /* Colonne droite */
+  .header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
+  }
+
+  .hamburger { display: flex; }
+
+  /* Cacher search, account, lang-switch sur mobile */
   .icon-btn[aria-label="Rechercher"],
   .icon-btn[aria-label="Mon compte"] { display: none; }
+  .lang-switch { display: none !important; }
   .header-icons { gap: 0; }
-  .icon-btn { width: 26px; height: 26px; }
+  .icon-btn { width: 28px; height: 28px; }
   .icon-btn svg { width: 16px; height: 16px; }
+
+  /* ---- MENU MOBILE spacing ---- */
+  .mobile-nav { gap: 32px; padding-top: 80px; justify-content: center; }
+  .mobile-nav a { font-size: 30px; }
 
   .hero { padding: 32px 24px 56px; }
   .hero-title { font-size: 38px; }
